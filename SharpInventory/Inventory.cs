@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace SharpInventory
 {
@@ -86,6 +87,17 @@ namespace SharpInventory
         IEnumerator IEnumerable.GetEnumerator()
         {
             return InventorySlots.GetEnumerator();
+        }
+        /// <summary>
+        /// Gets the <see cref="string"/> representation of the inventory.
+        /// </summary>
+        /// <returns>The <see cref="string"/> representation of the inventory.</returns>
+        public override string ToString()
+        {
+            string[] inventoryStringQuery =
+                (from slot in InventorySlots
+                 select slot.ToString()).ToArray();
+            return string.Join(", ", inventoryStringQuery);
         }
         #endregion
     }

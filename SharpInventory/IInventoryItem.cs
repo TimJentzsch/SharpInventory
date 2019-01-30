@@ -12,5 +12,10 @@ namespace SharpInventory
         /// </summary>
         /// <returns>The maximum item stack size.</returns>
         uint GetMaxStackSize();
+        /// <summary>
+        /// Gets the <see cref="string"/> representation of the item.
+        /// </summary>
+        /// <returns>The <see cref="string"/> representation of the item.</returns>
+        string ToString();
     }
 }

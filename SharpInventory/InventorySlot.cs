@@ -25,6 +25,11 @@ namespace SharpInventory
         /// Indicates if the inventory slot is filtered.
         /// </summary>
         public bool HasFilter => Filter != null;
+        /// <summary>
+        /// Indicates whether the <see cref="InventorySlot"/> contains any items.
+        /// </summary>
+        /// <returns><c>true</c>, if the <see cref="InventorySlot"/> is empty, else <c>false</c>.</returns>
+        public bool IsEmpty => Count == 0;
 
         #region Constructors
         /// <summary>
@@ -109,15 +114,6 @@ namespace SharpInventory
 
         #region Methods
         /// <summary>
-        /// Indicates whether the <see cref="InventorySlot"/> contains any items.
-        /// </summary>
-        /// <returns><c>true</c>, if the <see cref="InventorySlot"/> is empty, else <c>false</c>.</returns>
-        public bool IsEmpty()
-        {
-            return Count == 0;
-        }
-
-        /// <summary>
         /// Compare this <see cref="InventorySlot"/> to an other <see cref="InventorySlot"/>.
         /// </summary>
         /// <param name="other">The other <see cref="InventorySlot"/> to compare to.</param>
@@ -132,22 +128,25 @@ namespace SharpInventory
             {
                 if (!other.IsEmpty())
                 {
-                    if (Item.CompareTo(other.Item) != 0)
-                    {
-                        // Sort by item
-                        return Item.CompareTo(other.Item);
-                    }
-                    else
-                    {
-                        // Fuller slots first
-                        return -(Count.CompareTo(other.Count));
-                    }
+                    // Sort by item
+                    return Item.CompareTo(other.Item);
                 }
                 // Empty slots last
                 else return -1;
             }
             // Empty slots last
             else return 1;
+        }
+        /// <summary>
+        /// Gets the <see cref="string"/> representation of the inventory slot.
+        /// </summary>
+        /// <returns>The <see cref="string"/> representation of the inventory slot.</returns>
+        public override string ToString()
+        {
+            // Filter Item or contained Item
+            string itemString = (HasFilter) ? $"{{{Filter.ToString()}}}" : ((!IsEmpty) ? $"[{Item.ToString()}]" : "[ ]");
+            string countString = (!IsEmpty) ? $"({Count}/{Item.GetMaxStackSize()})" : "(0)";
+            return $"{itemString} {countString}";
         }
         #endregion
     }
