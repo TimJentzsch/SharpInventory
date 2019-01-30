@@ -8,7 +8,7 @@ namespace SharpInventory
     /// <summary>
     /// Represents an inventory.
     /// </summary>
-    public class Inventory : IEnumerable<IInventoryItem>
+    public class Inventory : IEnumerable<InventorySlot>
     {
         /// <summary>
         /// The array containing the inventory slots.
@@ -70,14 +70,22 @@ namespace SharpInventory
             }
         }
 
-        public IEnumerator<IInventoryItem> GetEnumerator()
+        /// <summary>
+        /// Gets an <see cref="IEnumerator"/> over all inventory slots.
+        /// </summary>
+        /// <returns>The enumerator over all inventory slots.</returns>
+        public IEnumerator<InventorySlot> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return (IEnumerator<InventorySlot>) InventorySlots.GetEnumerator();
         }
 
+        /// <summary>
+        /// Gets an <see cref="IEnumerator"/> over all inventory slots.
+        /// </summary>
+        /// <returns>The enumerator over all inventory slots.</returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            return InventorySlots.GetEnumerator();
         }
         #endregion
     }
