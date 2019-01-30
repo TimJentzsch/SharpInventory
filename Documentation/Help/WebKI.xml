@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="CompareTo method" Url="html/0aa12064-958f-18e2-8727-4801c4d1f8db.htm" />
+  <HelpKINode Title="Count property" Url="html/c61a8063-b43f-cbb4-38d5-1cae52f73161.htm" />
+  <HelpKINode Title="Filter property" Url="html/601828b9-9e7a-430c-0d86-4d53bbbb60db.htm" />
+  <HelpKINode Title="GetEnumerator method" Url="html/7c24a1bf-71a0-982e-9b07-43253804cf3d.htm" />
+  <HelpKINode Title="GetMaxStackSize method" Url="html/9853b649-d689-7f94-e6f5-ef0c625076c1.htm" />
+  <HelpKINode Title="GreaterThan operator" Url="html/9a9dac41-0f70-58fa-1f62-d624325b58f6.htm" />
+  <HelpKINode Title="GreaterThanOrEqual operator" Url="html/470a8625-886a-cd35-9ff6-640e74c0f970.htm" />
+  <HelpKINode Title="HasFilter property" Url="html/d684b395-ed31-ffca-e5c5-5a2e354057cc.htm" />
+  <HelpKINode Title="IInventoryItem interface">
+    <HelpKINode Title="IInventoryItem Interface" Url="html/4f77b36c-8c2c-6a66-a25c-fb81c79f0088.htm" />
+    <HelpKINode Title="methods" Url="html/46b27a5f-9190-5405-d359-c8bc00c9fba0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IInventoryItem.GetMaxStackSize method" Url="html/9853b649-d689-7f94-e6f5-ef0c625076c1.htm" />
+  <HelpKINode Title="Inventory class">
+    <HelpKINode Title="Inventory Class" Url="html/ba56b561-2792-375a-5c2b-3fff62755d77.htm" />
+    <HelpKINode Title="constructor" Url="html/b90b26e1-57cd-14f2-a646-9f61d810a935.htm" />
+    <HelpKINode Title="methods" Url="html/15c6c4b6-1e31-c8fc-227c-d02ab25ea804.htm" />
+    <HelpKINode Title="properties" Url="html/531846e6-9432-82a3-697f-e35cb490a258.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Inventory.GetEnumerator method" Url="html/7c24a1bf-71a0-982e-9b07-43253804cf3d.htm" />
+  <HelpKINode Title="Inventory.Inventory constructor" Url="html/b90b26e1-57cd-14f2-a646-9f61d810a935.htm" />
+  <HelpKINode Title="Inventory.InventorySlots property" Url="html/e9669369-f51c-9229-0534-a9ed3bcd7a64.htm" />
+  <HelpKINode Title="Inventory.Size property" Url="html/5b1dd9d0-707a-e90d-0477-d2547f2e7202.htm" />
+  <HelpKINode Title="Inventory.Sort method" Url="html/5afd62a9-30e3-a027-2224-52a2cbd8198f.htm" />
+  <HelpKINode Title="Inventory.Swap method" Url="html/b08762b0-6994-b880-d7e2-8081b52b7414.htm" />
+  <HelpKINode Title="InventorySlot class">
+    <HelpKINode Title="InventorySlot Class" Url="html/a9256789-0dde-50d8-2b24-65f0b75db500.htm" />
+    <HelpKINode Title="constructor" Url="html/c6e557cd-5165-f38b-4227-66283350a842.htm" />
+    <HelpKINode Title="methods" Url="html/b415f524-4f7a-b966-765a-d9e2e45f144b.htm" />
+    <HelpKINode Title="operators" Url="html/61c2a11b-455a-fa6c-6c93-3c312477f32e.htm" />
+    <HelpKINode Title="properties" Url="html/b1ae8bdc-346d-a8de-54c8-51abbda9a3d6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InventorySlot.CompareTo method" Url="html/0aa12064-958f-18e2-8727-4801c4d1f8db.htm" />
+  <HelpKINode Title="InventorySlot.Count property" Url="html/c61a8063-b43f-cbb4-38d5-1cae52f73161.htm" />
+  <HelpKINode Title="InventorySlot.Filter property" Url="html/601828b9-9e7a-430c-0d86-4d53bbbb60db.htm" />
+  <HelpKINode Title="InventorySlot.GreaterThan operator" Url="html/9a9dac41-0f70-58fa-1f62-d624325b58f6.htm" />
+  <HelpKINode Title="InventorySlot.GreaterThanOrEqual operator" Url="html/470a8625-886a-cd35-9ff6-640e74c0f970.htm" />
+  <HelpKINode Title="InventorySlot.HasFilter property" Url="html/d684b395-ed31-ffca-e5c5-5a2e354057cc.htm" />
+  <HelpKINode Title="InventorySlot.InventorySlot constructor" Url="html/c6e557cd-5165-f38b-4227-66283350a842.htm" />
+  <HelpKINode Title="InventorySlot.IsEmpty method" Url="html/b3fdfa3a-ccb2-a85f-ce03-200a76ebc911.htm" />
+  <HelpKINode Title="InventorySlot.Item property" Url="html/0829c32b-6673-daa5-a574-8c7de5d6adf5.htm" />
+  <HelpKINode Title="InventorySlot.LessThan operator" Url="html/96fe0985-d55d-539d-fa0c-5d33cd3882c8.htm" />
+  <HelpKINode Title="InventorySlot.LessThanOrEqual operator" Url="html/102930d6-9bf2-6dc9-ab67-5498dd0828c2.htm" />
+  <HelpKINode Title="InventorySlots property" Url="html/e9669369-f51c-9229-0534-a9ed3bcd7a64.htm" />
+  <HelpKINode Title="IsEmpty method" Url="html/b3fdfa3a-ccb2-a85f-ce03-200a76ebc911.htm" />
+  <HelpKINode Title="Item property" Url="html/0829c32b-6673-daa5-a574-8c7de5d6adf5.htm" />
+  <HelpKINode Title="LessThan operator" Url="html/96fe0985-d55d-539d-fa0c-5d33cd3882c8.htm" />
+  <HelpKINode Title="LessThanOrEqual operator" Url="html/102930d6-9bf2-6dc9-ab67-5498dd0828c2.htm" />
+  <HelpKINode Title="SharpInventory namespace" Url="html/1d5fdf08-3033-2ab6-7102-d7c65298b5da.htm" />
+  <HelpKINode Title="SharpInventory.IInventoryItem interface" Url="html/4f77b36c-8c2c-6a66-a25c-fb81c79f0088.htm" />
+  <HelpKINode Title="SharpInventory.Inventory class" Url="html/ba56b561-2792-375a-5c2b-3fff62755d77.htm" />
+  <HelpKINode Title="SharpInventory.InventorySlot class" Url="html/a9256789-0dde-50d8-2b24-65f0b75db500.htm" />
+  <HelpKINode Title="Size property" Url="html/5b1dd9d0-707a-e90d-0477-d2547f2e7202.htm" />
+  <HelpKINode Title="Sort method" Url="html/5afd62a9-30e3-a027-2224-52a2cbd8198f.htm" />
+  <HelpKINode Title="Swap method" Url="html/b08762b0-6994-b880-d7e2-8081b52b7414.htm" />
+  <HelpKINode Title="version">
+    <HelpKINode Title="1.0.0.0" Url="html/08b8cc08-37fd-40c6-a56d-e265de561785.htm" />
+    <HelpKINode Title="history" Url="html/ba12c561-d2fa-4570-90f9-e888df95d7ba.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Welcome" Url="html/6add0ba9-d9d2-4547-a3f9-a08ca41a6eaf.htm" />
+</HelpKI>

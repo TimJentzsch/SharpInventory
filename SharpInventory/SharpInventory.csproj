@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>A library for inventory management.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>6</LangVersion>
+    <DocumentationFile>bin\Debug\netstandard2.0\SharpInventory.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

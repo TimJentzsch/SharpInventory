@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="6add0ba9-d9d2-4547-a3f9-a08ca41a6eaf" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>This project provides a library for inventory management.</para>
+		</introduction>
+
+		<section>
+			<title>GitHub</title>
+			<content>
+                <para>
+                    You can view the sourcecode on GitHub.
+                </para>
+			</content>
+		</section>
+
+		<relatedTopics>
+			<link xlink:href="ba12c561-d2fa-4570-90f9-e888df95d7ba" />
+		</relatedTopics>
+	</developerConceptualDocument>
+</topic>

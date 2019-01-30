@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpInventory", "SharpInventory\SharpInventory.csproj", "{3974C16A-F11D-4E61-9A41-1F3A5F7A0D2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpInventory", "SharpInventory\SharpInventory.csproj", "{3974C16A-F11D-4E61-9A41-1F3A5F7A0D2C}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Documentation", "Documentation\Documentation.shfbproj", "{82714B39-94FD-4397-B2B1-D792C73444DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3974C16A-F11D-4E61-9A41-1F3A5F7A0D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3974C16A-F11D-4E61-9A41-1F3A5F7A0D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3974C16A-F11D-4E61-9A41-1F3A5F7A0D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82714B39-94FD-4397-B2B1-D792C73444DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82714B39-94FD-4397-B2B1-D792C73444DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82714B39-94FD-4397-B2B1-D792C73444DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82714B39-94FD-4397-B2B1-D792C73444DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
