@@ -40,7 +40,7 @@ namespace SharpInventory
         /// <exception cref="ArgumentOutOfRangeException">The <paramref name="count"/> exceeds the maximum stack size of the item.</exception>
         public InventorySlot(IInventoryItem item, uint count)
         {
-            if (count > item.GetMaxStackSize())
+            if (item != null && count > item.GetMaxStackSize())
             {
                 throw new ArgumentOutOfRangeException("The item count exceeds the maximum item stack size.");
             }
@@ -124,9 +124,9 @@ namespace SharpInventory
             if (other == null)
                 return -1;
 
-            if (!IsEmpty())
+            if (!IsEmpty)
             {
-                if (!other.IsEmpty())
+                if (!other.IsEmpty)
                 {
                     // Sort by item
                     return Item.CompareTo(other.Item);

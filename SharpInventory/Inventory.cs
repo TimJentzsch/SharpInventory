@@ -20,6 +20,14 @@ namespace SharpInventory
         /// </summary>
         public int Size => InventorySlots.Length;
 
+        /// <summary>
+        /// Creates a new <see cref="Inventory"/> with the given <paramref name="size"/>.
+        /// </summary>
+        /// <param name="size">The size of the <see cref="Inventory"/>.</param>
+        public Inventory(int size)
+        {
+            InventorySlots = new InventorySlot[size];
+        }
 
         #region Methods
         /// <summary>
