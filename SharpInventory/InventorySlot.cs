@@ -7,7 +7,7 @@ namespace SharpInventory
     /// <summary>
     /// Represents a slot in an inventory.
     /// </summary>
-    public class InventorySlot : IComparable<InventorySlot>
+    public class InventorySlot<T> : IComparable<InventorySlot<T>> where T : IInventoryItem
     {
         /// <summary>
         /// The item contained in the inventory slot.
@@ -26,14 +26,14 @@ namespace SharpInventory
         /// </summary>
         public bool HasFilter => Filter != null;
         /// <summary>
-        /// Indicates whether the <see cref="InventorySlot"/> contains any items.
+        /// Indicates whether the <see cref="InventorySlot{T}"/> contains any items.
         /// </summary>
-        /// <returns><c>true</c>, if the <see cref="InventorySlot"/> is empty, else <c>false</c>.</returns>
+        /// <returns><c>true</c>, if the <see cref="InventorySlot{T}"/> is empty, else <c>false</c>.</returns>
         public bool IsEmpty => Count == 0;
 
         #region Constructors
         /// <summary>
-        /// Create a new <see cref="InventorySlot"/> with <paramref name="count"/> of <paramref name="item"/>.
+        /// Create a new <see cref="InventorySlot{T}"/> with <paramref name="count"/> of <paramref name="item"/>.
         /// </summary>
         /// <param name="item">The <see cref="IInventoryItem"/> to put in the slot.</param>
         /// <param name="count">How many items to put in the slot.</param>
@@ -50,7 +50,7 @@ namespace SharpInventory
         }
 
         /// <summary>
-        /// Create a new <see cref="InventorySlot"/> with one <paramref name="item"/>.
+        /// Create a new <see cref="InventorySlot{T}"/> with one <paramref name="item"/>.
         /// </summary>
         /// <param name="item">The <see cref="IInventoryItem"/> to put in the slot.</param>
         public InventorySlot(IInventoryItem item)
@@ -60,7 +60,7 @@ namespace SharpInventory
         }
 
         /// <summary>
-        /// Create a new empty <see cref="InventorySlot"/>.
+        /// Create a new empty <see cref="InventorySlot{T}"/>.
         /// </summary>
         public InventorySlot()
         {
@@ -76,7 +76,7 @@ namespace SharpInventory
         /// <param name="left">The left item to compare.</param>
         /// <param name="right">The right item to compare.</param>
         /// <returns><c>true</c>, if the <paramref name="left"/> slot is smaller than the <paramref name="right"/> slot, else <c>false</c>.</returns>
-        public static bool operator <(InventorySlot left, InventorySlot right)
+        public static bool operator <(InventorySlot<T> left, InventorySlot<T> right)
         {
             return left.CompareTo(right) < 0;
         }
@@ -86,7 +86,7 @@ namespace SharpInventory
         /// <param name="left">The left item to compare.</param>
         /// <param name="right">The right item to compare.</param>
         /// <returns><c>true</c>, if the <paramref name="left"/> slot is bigger than the <paramref name="right"/> slot, else <c>false</c>.</returns>
-        public static bool operator >(InventorySlot left, InventorySlot right)
+        public static bool operator >(InventorySlot<T> left, InventorySlot<T> right)
         {
             return left.CompareTo(right) > 0;
         }
@@ -96,7 +96,7 @@ namespace SharpInventory
         /// <param name="left">The left item to compare.</param>
         /// <param name="right">The right item to compare.</param>
         /// <returns><c>true</c>, if the <paramref name="left"/> slot is smaller than or equal to the <paramref name="right"/> slot, else <c>false</c>.</returns>
-        public static bool operator <=(InventorySlot left, InventorySlot right)
+        public static bool operator <=(InventorySlot<T> left, InventorySlot<T> right)
         {
             return left.CompareTo(right) <= 0;
         }
@@ -106,7 +106,7 @@ namespace SharpInventory
         /// <param name="left">The left item to compare.</param>
         /// <param name="right">The right item to compare.</param>
         /// <returns><c>true</c>, if the <paramref name="left"/> slot is bigger than or equal to the <paramref name="right"/> slot, else <c>false</c>.</returns>
-        public static bool operator >=(InventorySlot left, InventorySlot right)
+        public static bool operator >=(InventorySlot<T> left, InventorySlot<T> right)
         {
             return left.CompareTo(right) <= 0;
         }
@@ -114,12 +114,12 @@ namespace SharpInventory
 
         #region Methods
         /// <summary>
-        /// Compare this <see cref="InventorySlot"/> to an other <see cref="InventorySlot"/>.
+        /// Compare this <see cref="InventorySlot{T}"/> to an other <see cref="InventorySlot{T}"/>.
         /// </summary>
-        /// <param name="other">The other <see cref="InventorySlot"/> to compare to.</param>
+        /// <param name="other">The other <see cref="InventorySlot{T}"/> to compare to.</param>
         /// <returns><c>-1</c>, if this instance precedes, <c>1</c>, if this instance follows and <c>0</c> 
         /// if this instance appears in the same position in the sort order as the <paramref name="other"/> parameter.</returns>
-        public int CompareTo(InventorySlot other)
+        public int CompareTo(InventorySlot<T> other)
         {
             if (other == null)
                 return -1;

@@ -2,48 +2,51 @@
 <HelpTOC>
 
   <HelpTOCNode Title="Welcome to the SharpInventory Documentation" Url="html/6add0ba9-d9d2-4547-a3f9-a08ca41a6eaf.htm" />
-  <HelpTOCNode Id="53395481-eca6-446b-9e35-f08b07a09e9c" Title="Version History" Url="html/ba12c561-d2fa-4570-90f9-e888df95d7ba.htm">
+  <HelpTOCNode Id="905e63cd-c1e4-4c11-ae58-0fc15602d042" Title="Version History" Url="html/ba12c561-d2fa-4570-90f9-e888df95d7ba.htm">
     <HelpTOCNode Title="Version 1.0.0.0" Url="html/08b8cc08-37fd-40c6-a56d-e265de561785.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="98c5cbbf-fa48-4446-bc35-0959c032d6a4" Title="SharpInventory" Url="html/1d5fdf08-3033-2ab6-7102-d7c65298b5da.htm">
-    <HelpTOCNode Id="9730ffa6-74e8-4b03-a763-6d15af2bc7c8" Title="IInventoryItem Interface" Url="html/4f77b36c-8c2c-6a66-a25c-fb81c79f0088.htm">
-      <HelpTOCNode Id="4d020673-66af-472e-9f39-c7d1ba36acbe" Title="IInventoryItem Methods" Url="html/46b27a5f-9190-5405-d359-c8bc00c9fba0.htm">
+  <HelpTOCNode Id="245e0d20-59c8-4093-be72-4ef91ffe7db7" Title="SharpInventory" Url="html/1d5fdf08-3033-2ab6-7102-d7c65298b5da.htm">
+    <HelpTOCNode Id="e2031fe2-5789-4ab0-b78b-47f75191a011" Title="IInventoryItem Interface" Url="html/4f77b36c-8c2c-6a66-a25c-fb81c79f0088.htm">
+      <HelpTOCNode Id="4511745f-c045-4eec-88c8-c76b849630e9" Title="IInventoryItem Methods" Url="html/46b27a5f-9190-5405-d359-c8bc00c9fba0.htm">
         <HelpTOCNode Title="GetMaxStackSize Method " Url="html/9853b649-d689-7f94-e6f5-ef0c625076c1.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/20d8f507-9520-69e7-50f4-39d2528f9ffe.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="9d7a9531-753b-4ebe-bbd2-686f5d21683c" Title="Inventory Class" Url="html/ba56b561-2792-375a-5c2b-3fff62755d77.htm">
-      <HelpTOCNode Title="Inventory Constructor " Url="html/b90b26e1-57cd-14f2-a646-9f61d810a935.htm" />
-      <HelpTOCNode Id="a84b9c19-15c3-4afe-89aa-051a23321278" Title="Inventory Properties" Url="html/531846e6-9432-82a3-697f-e35cb490a258.htm">
-        <HelpTOCNode Title="InventorySlots Property " Url="html/e9669369-f51c-9229-0534-a9ed3bcd7a64.htm" />
-        <HelpTOCNode Title="Size Property " Url="html/5b1dd9d0-707a-e90d-0477-d2547f2e7202.htm" />
+    <HelpTOCNode Id="9c3e28da-89d2-44f5-8b93-921f4087dbc1" Title="Inventory(T) Class" Url="html/7f69ba26-594e-ae67-23ac-7437ff23c700.htm">
+      <HelpTOCNode Title="Inventory(T) Constructor " Url="html/7b61265d-825e-f56c-447f-49f3db08cdcf.htm" />
+      <HelpTOCNode Id="16f1fa23-d521-4b3f-8f80-ef1845f6d9e7" Title="Inventory(T) Properties" Url="html/80830e6a-c7a6-7df1-5e4d-36b11a95f965.htm">
+        <HelpTOCNode Title="InventorySlots Property " Url="html/abbda1e5-23c2-3c5c-7f54-b27da6c713a9.htm" />
+        <HelpTOCNode Title="Size Property " Url="html/e81f11cd-3521-1b7c-f565-5f13b13fa5e5.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="96b79998-8ecb-417f-a166-c86f30733a0f" Title="Inventory Methods" Url="html/15c6c4b6-1e31-c8fc-227c-d02ab25ea804.htm">
-        <HelpTOCNode Title="GetEnumerator Method " Url="html/7c24a1bf-71a0-982e-9b07-43253804cf3d.htm" />
-        <HelpTOCNode Title="Sort Method " Url="html/5afd62a9-30e3-a027-2224-52a2cbd8198f.htm" />
-        <HelpTOCNode Title="Swap Method " Url="html/b08762b0-6994-b880-d7e2-8081b52b7414.htm" />
+      <HelpTOCNode Id="49ed4a11-b682-42de-83ae-01b773984320" Title="Inventory(T) Methods" Url="html/a30ac3b5-9e51-567b-09c3-02a35a520f7d.htm">
+        <HelpTOCNode Title="GetEnumerator Method " Url="html/75f6ea63-9140-b161-2d5d-d86b88b4a0e2.htm" />
+        <HelpTOCNode Title="Sort Method " Url="html/581e7087-8945-b154-a088-d355406ccb19.htm" />
+        <HelpTOCNode Title="Swap Method " Url="html/886144c6-dd9d-358d-fa75-dfc00b556bb5.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/af47f557-3df7-a274-2a56-ff7960d21342.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="850fd0d1-df1a-4498-a0f0-c99a9b333fe4" Title="InventorySlot Class" Url="html/a9256789-0dde-50d8-2b24-65f0b75db500.htm">
-      <HelpTOCNode Id="aa99224b-6767-41e2-bf07-e3954550ada8" Title="InventorySlot Constructor " Url="html/c6e557cd-5165-f38b-4227-66283350a842.htm">
-        <HelpTOCNode Title="InventorySlot Constructor " Url="html/e654b81f-16c8-3068-4a09-34e16b73f4b0.htm" />
-        <HelpTOCNode Title="InventorySlot Constructor (IInventoryItem)" Url="html/14aa777e-6de0-c902-7678-4046c96adbb2.htm" />
-        <HelpTOCNode Title="InventorySlot Constructor (IInventoryItem, UInt32)" Url="html/01889014-260f-e4a8-bebc-8034e66c6cba.htm" />
+    <HelpTOCNode Id="cd384290-9d0c-4354-95fc-ceaa45044167" Title="InventorySlot(T) Class" Url="html/2a1b68ca-9a4b-5741-661d-5323d0766280.htm">
+      <HelpTOCNode Id="25a45b97-ad84-4ffb-adf9-f6887085f6b7" Title="InventorySlot(T) Constructor " Url="html/90c96830-f5e9-f99e-84fc-8f0775ab0b4e.htm">
+        <HelpTOCNode Title="InventorySlot(T) Constructor " Url="html/dbacb253-481d-6e08-5661-4e6cb34d2f39.htm" />
+        <HelpTOCNode Title="InventorySlot(T) Constructor (IInventoryItem)" Url="html/22072010-5fcb-a4fb-dc57-9379640a53b0.htm" />
+        <HelpTOCNode Title="InventorySlot(T) Constructor (IInventoryItem, UInt32)" Url="html/d59ec0d4-bd08-1f4a-250b-96efec258999.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b58618bb-a0f7-4149-ab8e-532646925d6e" Title="InventorySlot Properties" Url="html/b1ae8bdc-346d-a8de-54c8-51abbda9a3d6.htm">
-        <HelpTOCNode Title="Count Property " Url="html/c61a8063-b43f-cbb4-38d5-1cae52f73161.htm" />
-        <HelpTOCNode Title="Filter Property " Url="html/601828b9-9e7a-430c-0d86-4d53bbbb60db.htm" />
-        <HelpTOCNode Title="HasFilter Property " Url="html/d684b395-ed31-ffca-e5c5-5a2e354057cc.htm" />
-        <HelpTOCNode Title="Item Property " Url="html/0829c32b-6673-daa5-a574-8c7de5d6adf5.htm" />
+      <HelpTOCNode Id="5cae7982-4959-4922-a97d-7fafcf02ab08" Title="InventorySlot(T) Properties" Url="html/85a2be03-d392-d845-6760-495c886cd153.htm">
+        <HelpTOCNode Title="Count Property " Url="html/a020a806-2294-a641-3932-4dc6aa97a1e0.htm" />
+        <HelpTOCNode Title="Filter Property " Url="html/070ecc9e-a626-9930-3608-645c55b85749.htm" />
+        <HelpTOCNode Title="HasFilter Property " Url="html/b343e361-1115-78b7-8e60-f2b4901881ac.htm" />
+        <HelpTOCNode Title="IsEmpty Property " Url="html/3f873dc8-5615-182f-1445-f7641850d524.htm" />
+        <HelpTOCNode Title="Item Property " Url="html/7fcf679c-1866-8ae7-4450-ca4153ca5f15.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="091e036b-8bf3-451d-a982-a36ee1a048cd" Title="InventorySlot Methods" Url="html/b415f524-4f7a-b966-765a-d9e2e45f144b.htm">
-        <HelpTOCNode Title="CompareTo Method " Url="html/0aa12064-958f-18e2-8727-4801c4d1f8db.htm" />
-        <HelpTOCNode Title="IsEmpty Method " Url="html/b3fdfa3a-ccb2-a85f-ce03-200a76ebc911.htm" />
+      <HelpTOCNode Id="582246e9-ff5b-4428-bf6c-7ddc6d9aa0b5" Title="InventorySlot(T) Methods" Url="html/cb18c719-aba7-34c3-4eff-857922e7c1bb.htm">
+        <HelpTOCNode Title="CompareTo Method " Url="html/029dd84b-fed2-eb28-bffa-ec6c04acf20a.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/6a920df2-a382-ddd3-9dc6-1fffbdf8add5.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="5e0d7f31-0db0-4d42-aa82-13749fe78e5f" Title="InventorySlot Operators" Url="html/61c2a11b-455a-fa6c-6c93-3c312477f32e.htm">
-        <HelpTOCNode Title="GreaterThan Operator " Url="html/9a9dac41-0f70-58fa-1f62-d624325b58f6.htm" />
-        <HelpTOCNode Title="GreaterThanOrEqual Operator " Url="html/470a8625-886a-cd35-9ff6-640e74c0f970.htm" />
-        <HelpTOCNode Title="LessThan Operator " Url="html/96fe0985-d55d-539d-fa0c-5d33cd3882c8.htm" />
-        <HelpTOCNode Title="LessThanOrEqual Operator " Url="html/102930d6-9bf2-6dc9-ab67-5498dd0828c2.htm" />
+      <HelpTOCNode Id="7cd64993-96c6-4763-9a12-186ca13cbe9f" Title="InventorySlot(T) Operators" Url="html/08522fed-d6ed-bbfc-7a07-594003af5edd.htm">
+        <HelpTOCNode Title="GreaterThan Operator " Url="html/0b9b51b8-c248-643d-0c00-ae8270086d21.htm" />
+        <HelpTOCNode Title="GreaterThanOrEqual Operator " Url="html/7d039fd7-c756-3dec-26fa-8b62b7ef5dd5.htm" />
+        <HelpTOCNode Title="LessThan Operator " Url="html/c5b2d879-affc-6d49-a44f-470d02256f79.htm" />
+        <HelpTOCNode Title="LessThanOrEqual Operator " Url="html/2510df01-e08d-5a8d-6473-ea8a38687494.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>

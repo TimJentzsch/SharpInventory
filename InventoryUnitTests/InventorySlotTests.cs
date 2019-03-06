@@ -16,21 +16,21 @@ namespace InventoryUnitTests
             public void TestIsEmptyOnCountZero()
             {
                 Item testItem = new Item("A");
-                InventorySlot testSlot = new InventorySlot(testItem, 0);
+                InventorySlot<Item> testSlot = new InventorySlot<Item>(testItem, 0);
 
                 Assert.IsTrue(testSlot.IsEmpty);
             }
             [TestMethod]
             public void TestIsEmptyOnNullItem()
             {
-                InventorySlot testSlot = new InventorySlot(null, 1);
+                InventorySlot<Item> testSlot = new InventorySlot<Item>(null, 1);
 
                 Assert.IsTrue(testSlot.IsEmpty);
             }
             [TestMethod]
             public void TestIsEmptyOnEmptyInit()
             {
-                InventorySlot testSlot = new InventorySlot();
+                InventorySlot<Item> testSlot = new InventorySlot<Item>();
 
                 Assert.IsTrue(testSlot.IsEmpty);
             }

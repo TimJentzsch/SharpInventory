@@ -9,7 +9,7 @@ namespace InventoryUnitTests
         [TestMethod]
         public void TestNormalSort()
         {
-            Inventory testInventory = new Inventory(10);
+            Inventory<Item> testInventory = new Inventory<Item>(10);
         }
     }
 }

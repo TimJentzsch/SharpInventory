@@ -9,24 +9,24 @@ namespace SharpInventory
     /// <summary>
     /// Represents an inventory.
     /// </summary>
-    public class Inventory : IEnumerable<InventorySlot>
+    public class Inventory<T> : IEnumerable<InventorySlot<T>> where T : IInventoryItem
     {
         /// <summary>
         /// The array containing the inventory slots.
         /// </summary>
-        protected InventorySlot[] InventorySlots { get; set; }
+        protected InventorySlot<T>[] InventorySlots { get; set; }
         /// <summary>
         /// The size of the inventory.
         /// </summary>
         public int Size => InventorySlots.Length;
 
         /// <summary>
-        /// Creates a new <see cref="Inventory"/> with the given <paramref name="size"/>.
+        /// Creates a new <see cref="Inventory{T}"/> with the given <paramref name="size"/>.
         /// </summary>
-        /// <param name="size">The size of the <see cref="Inventory"/>.</param>
+        /// <param name="size">The size of the <see cref="Inventory{T}"/>.</param>
         public Inventory(int size)
         {
-            InventorySlots = new InventorySlot[size];
+            InventorySlots = new InventorySlot<T>[size];
         }
 
         #region Methods
@@ -42,7 +42,7 @@ namespace SharpInventory
             // Iterate through all slots
             for (int slotIndex = 1; slotIndex < Size; slotIndex++)
             {
-                InventorySlot curSlot = InventorySlots[slotIndex];
+                InventorySlot<T> curSlot = InventorySlots[slotIndex];
                 // Ignore filtered slots
                 if (!curSlot.HasFilter)
                 {
@@ -50,7 +50,7 @@ namespace SharpInventory
                     // Move all bigger slots to the right
                     for (int curSwapIndex = slotIndex - 1; (curSwapIndex >= 0) && (curSlot > InventorySlots[curSwapIndex]); curSwapIndex--)
                     {
-                        InventorySlot curSwap = InventorySlots[curSwapIndex];
+                        InventorySlot<T> curSwap = InventorySlots[curSwapIndex];
                         // Ignore filtered slots
                         if (!curSwap.HasFilter)
                         {
@@ -67,13 +67,13 @@ namespace SharpInventory
         /// <summary>
         /// Swaps two inventory slots.
         /// </summary>
-        /// <param name="firstIndex">The index of the first <see cref="InventorySlot"/> to swap.</param>
-        /// <param name="secondIndex">The index of the second <see cref="InventorySlot"/> to swap.</param>
+        /// <param name="firstIndex">The index of the first <see cref="InventorySlot{T}"/> to swap.</param>
+        /// <param name="secondIndex">The index of the second <see cref="InventorySlot{T}"/> to swap.</param>
         public void Swap(int firstIndex, int secondIndex)
         {
             if (firstIndex != secondIndex)
             {
-                InventorySlot temp = InventorySlots[firstIndex];
+                InventorySlot<T> temp = InventorySlots[firstIndex];
                 InventorySlots[firstIndex] = InventorySlots[secondIndex];
                 InventorySlots[secondIndex] = temp;
             }
@@ -83,9 +83,9 @@ namespace SharpInventory
         /// Gets an <see cref="IEnumerator"/> over all inventory slots.
         /// </summary>
         /// <returns>The enumerator over all inventory slots.</returns>
-        public IEnumerator<InventorySlot> GetEnumerator()
+        public IEnumerator<InventorySlot<T>> GetEnumerator()
         {
-            return (IEnumerator<InventorySlot>) InventorySlots.GetEnumerator();
+            return (IEnumerator<InventorySlot<T>>) InventorySlots.GetEnumerator();
         }
 
         /// <summary>
